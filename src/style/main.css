@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .app-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 0 15px;
+  background-color: #f3f3f3;
+}
+
+body .container {
+  padding: 25px 150px;
+}
+
+body .container .product-list {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+body .container .product-list .product {
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0 0 10px #33333342;
+          box-shadow: 0 0 10px #33333342;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+body .container .product-list .product:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+body .container .product-list .product .image img {
+  width: 100%;
+}
+
+body .container .product-list .product .title {
+  padding: 10px;
+  font-weight: bold;
+}
+
+body .container .product-list .product .description {
+  padding: 0 10px;
+}
+
+body .container .product-list .product .actions {
+  margin-top: 15px;
+}
+
+body .container .product-list .product .actions button {
+  width: 100%;
+  border: none;
+  height: 40px;
+  color: #333;
+  background-color: #719dbb94;
+  cursor: pointer;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+body .container .product-list .product .actions button:hover {
+  background-color: #719dbb;
+}
+/*# sourceMappingURL=main.css.map */
